@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ungap WeakSet</title>
-  <script>this.WeakMap||document.write('<script src="https://unpkg.com/@ungap/weakmap"><\x2fscript>')</script>
+  <title>ungap essential Symbol</title>
   <script src="global.js"></script>
   <script type="module">
-  import WS from '../esm/index.js';
-  window.WS = WS;
+  import S from '../esm/index.js';
+  window.S = S;
   </script>
   <script>
   this.onload = function () {
-    if (!this.WM)
+    if (!this.S)
       loadScript('../min.js', function () {
-        loadTest(WeakSet, 'WeakSet!');
+        loadTest(Symbol, 'Symbol!');
       });
     else {
-      console.assert(WS === WeakSet);
-      loadTest(WeakSet, 'WeakSet!');
+      console.assert(S === Symbol);
+      loadTest(Symbol, 'Symbol!');
     }
   };
   </script>
