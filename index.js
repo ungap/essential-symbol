@@ -1,5 +1,5 @@
 /*! (c) Andrea Giammarchi - ISC */
-var self = this || /* istanbul ignore next */ {};
+var self = this || {};
 try { self.Symbol = Symbol; }
 catch(Symbol) {
   (function (String, dict, id) {'use strict';
